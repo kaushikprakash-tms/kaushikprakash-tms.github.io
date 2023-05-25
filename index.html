@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>Embedded Total Mortgage Application</title>
-    <script defer src="https://tms-resource-files.s3.amazonaws.com/Website+Resources/tms-apply.js" id="tms-apply" 
-            data-utm-source="your_utm_source" data-show-brand="true">
-    </script>
   </head>
   <body>
-    
+    <script defer src="https://tms-resource-files.s3.amazonaws.com/Website+Resources/tms-apply.js" id="tms-apply" data-utm-source="your_utm_source" data-show-brand="false" data-widget-mode="true"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const tmsScript = document.getElementById('tms-apply');
+          window.tmsApply(tmsScript);
+        });
+    </script>
     <div class="container">
       <!-- Placeholder content -->
       <div class="flex-item">
@@ -28,16 +31,7 @@
           vel. Vestibulum non purus eget lectus consectetur ullamcorper ac id
           augue. Integer posuere magna ut mollis pulvinar.
         </p>
-      </div>
-      <div class="flex-item">
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-              const tmsScript = document.getElementById('tms-apply');
-              window.tmsApply(tmsScript);
-          });
-        </script>
-      </div>
-      <div class="flex-item">
+    </div>      <div class="flex-item">
         <h1>Articles and Blogs</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit

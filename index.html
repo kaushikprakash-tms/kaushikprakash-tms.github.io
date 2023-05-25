@@ -6,12 +6,7 @@
     <script defer src="https://tms-resource-files.s3.amazonaws.com/Website+Resources/tms-apply.js" id="tms-apply" data-utm-source="your_utm_source" data-show-brand="false"></script>
   </head>
   <body>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const tmsScript = document.getElementById('tms-apply');
-          window.tmsApply(tmsScript);
-      });
-    </script>
+    
     <div class="container">
       <!-- Placeholder content -->
       <div class="flex-item">
@@ -32,8 +27,14 @@
           augue. Integer posuere magna ut mollis pulvinar.
         </p>
       </div>
-      <script src="https://tms-resource-files.s3.amazonaws.com/Website+Resources/tms-apply.js"></script>
-      <!-- Placeholder content -->
+      <div class="flex-item">
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const tmsScript = document.getElementById('tms-apply');
+              window.tmsApply(tmsScript);
+          });
+        </script>
+      </div>
       <div class="flex-item">
         <h1>Articles and Blogs</h1>
         <p>
